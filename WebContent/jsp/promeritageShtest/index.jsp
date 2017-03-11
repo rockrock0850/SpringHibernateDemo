@@ -51,7 +51,7 @@ $(function() {
 		$.ajax({
 			type : "get",
 			dataType : 'json',
-			url : 'PromeritageShtest/employeeDetail/' + id,
+			url : 'demo/employeeDetail/' + id,
 			success : function(res) {
 				$('#firstNameEdit').val(res.firstName);
 				$('#lastNameEdit').val(res.lastName);
@@ -76,7 +76,7 @@ function newModalSave() {
 	$.ajax({
 		type : "post",
 		dataType : 'json',
-		url : 'PromeritageShtest/employeeNew',
+		url : 'demo/employeeNew',
 		contentType : "application/json",
 		data : JSON.stringify(data),
 		success : function(res) {
@@ -115,7 +115,7 @@ function updateModalSave() {
 	$.ajax({
 		type : "post",
 		dataType : 'json',
-		url : 'PromeritageShtest/employeeUpdate',
+		url : 'demo/employeeUpdate',
 		contentType : "application/json",
 		data : JSON.stringify(data),
 		success : function(res) {
@@ -146,7 +146,7 @@ function deleteItem(id) {
 	$.ajax({
 		type : "get",
 		dataType : 'json',
-		url : 'PromeritageShtest/employeeDelete/' + id,
+		url : 'demo/employeeDelete/' + id,
 		contentType : "application/json",
 		success : function(res) {
 			location.reload(true);
