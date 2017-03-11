@@ -34,7 +34,7 @@ import com.promeritage.shtest.vo.form.EmployeeVO;
 
 @RestController
 @Scope(value = "prototype")
-@RequestMapping(value = "/SpringHibernateDemo")
+@RequestMapping(value = "/demo")
 public class SpringHibernateDemoController extends BaseController{
 	
 	private Logger log = Logger.getLogger(this.getClass());
